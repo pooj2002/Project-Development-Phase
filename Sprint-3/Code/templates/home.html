@@ -10,6 +10,19 @@
   <link rel="stylesheet" href="..\static\css\home.css">
   <title>Personal Expense Tracker</title>
   <link rel="shortcut icon" href="/static/images/title-icon.png" type="image/x-icon">
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "6392c642-e4e6-44a8-829a-f350772a0c1a", // The ID of this integration.
+      region: "au-syd", // The region your integration is hosted in.
+      serviceInstanceID: "dfebf790-1310-4e12-9378-609d293f199f", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
 
 </head>
 
