@@ -1,5 +1,4 @@
-
-@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Trirong");
 * {
 	padding: 0;
 	margin: 0;
@@ -7,7 +6,6 @@
 }
 html {
 	font-size: 10px;
-	font-family: 'Ubuntu', sans-serif;
 	scroll-behavior: smooth;
 }
 a {
@@ -30,7 +28,7 @@ img {
 	object-fit: cover;
 }
 p {
-	color: black;
+	color: white;
 	font-size: 1.4rem;
 	margin-top: 5px;
 	line-height: 2.5rem;
@@ -40,7 +38,7 @@ p {
 .section-title {
 	font-size: 4rem;
 	font-weight: 300;
-	color: black;
+	color: white;
 	margin-bottom: 10px;
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
@@ -53,9 +51,9 @@ p {
 .cta {
 	display: inline-block;
 	padding: 10px 30px;
-	color: #0e0f10;
+	color: white;
 	background-color: transparent;
-	border: 2px solid #0e0f10;
+	border: 2px solid white;
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
@@ -63,10 +61,10 @@ p {
 	transition: 0.3s ease;
 	transition-property: background-color, color;
 }
-.cta:hover {
+/* .cta:hover {
 	color: #e89328;
-	background-color: black;
-}
+	background-color: white;
+} */
 .brand h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
@@ -84,7 +82,8 @@ p {
 	top: 0;
 	width: 100vw;
 	height: auto;
-	
+	background-image: linear-gradient(to right, #e9ea2d, greenyellow, #1e8f36);
+	color : black;
 	box-shadow: 0px 0px 18px 0 #1b1a1ae9;
 }
 #header .header {
@@ -125,7 +124,7 @@ p {
 	font-weight: 900;
 	letter-spacing: 0.2rem;
 	text-decoration: none;
-	color: black;
+	color: white;
 	text-transform: uppercase;
 	padding: 20px;
 	display: block;
@@ -150,8 +149,7 @@ p {
 	letter-spacing: initial;
 }
 #header .nav-list ul li a:hover {
-	background-color: black;
-	color: whitesmoke;
+	color: greenyellow;
 	transition: all 0.2s ease-in-out;
 }
 #header .hamburger {
@@ -182,7 +180,7 @@ p {
 	height: 2px;
 	width: 30px;
 	position: relative;
-	background-color: white;
+	background-image: linear-gradient(to right, #e9ea2d, greenyellow, #1e8f36);
 	z-index: -1;
 }
 #header .hamburger .bar::after,
@@ -192,7 +190,6 @@ p {
 	height: 100%;
 	width: 100%;
 	left: 0;
-	background-color: white;
 	transition: 0.3s ease;
 	transition-property: top, bottom;
 }
@@ -212,34 +209,32 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(../images/expense.jpg);
+	background-image: url(../images/EXPENSE1.jpg);
 	background-size: cover;
 	background-position: center;
-	position: relative;
+	text-align: center;
+	color : white;
 	z-index: 1;
+	text-shadow: 1px 1px #000000;
 }
 #hero::after {
 	content: '';
-	position: absolute;
 	left: 0;
 	top: 0;
 	height: 100%;
 	width: 100%;
-	/* background-color: black; */
 	opacity: 0.7;
 	z-index: -1;
 }
 #hero .hero {
 	/* max-width: 1200px; */
-	margin: 0 auto;
-	padding: 0 50px;
+	margin: 0;
 	justify-content: flex-end;
 }
 #hero h1 {
 	display: block;
 	width: fit-content;
 	font-size: 4rem;
-	position: relative;
 	color: transparent;
 	animation: text_reveal 0.5s ease forwards;
 	animation-delay: 1s;
@@ -256,12 +251,10 @@ p {
 	animation-delay: 3s;
 }
 #hero h1 span {
-	position: absolute;
 	top: 0;
 	left: 0;
 	height: 100%;
 	width: 0;
-	background-color: black;
 	animation: text_reveal_box 1s ease;
 	animation-delay: 0.5s;
 }
@@ -283,13 +276,16 @@ p {
 	text-align: center;
 	max-width: 100%;
 	margin: 0;
-	background-color: whitesmoke;
-	color: black;
+	background-image: url(../images/expense2.jpg);
+	background-size: cover;
+	background-position: center;
+	color: greenyellow;
 	padding: 100px 0;
 }
 #services .service-top {
 	max-width: 500px;
 	margin: 0 auto;
+	text-shadow: 1px 1px #000000;
 }
 #services .service-bottom {
 	display: flex;
@@ -322,7 +318,7 @@ p {
 	height: 100%;
 	width: 100%;
 	/* background-image: linear-gradient(60deg, #0e0f10 23%, #e89328 100%); */
-	background-color: #0e0e0f;
+	background-color: #e9ea2d;
 	opacity: 0.9;
 	z-index: -1;
 }
@@ -333,12 +329,12 @@ p {
 }
 #services .service-item h2 {
 	font-size: 2rem;
-	color: white;
+	color: #073113;
 	margin-bottom: 10px;
 	text-transform: uppercase;
 }
 #services .service-item p {
-	color: white;
+	color: #1e8f36;
 	text-align: left;
 }
 /* End Services Section */
@@ -347,7 +343,7 @@ p {
 #projects .projects {
 	flex-direction: column;
 	max-width: 100%;
-	background-color: black;
+	background-color: #1e8f36;
 	margin: 0px;
 	padding: 100px 0;
 }
@@ -379,7 +375,7 @@ p {
 	justify-content: center;
 	flex-direction: column;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	color: white;
+	color: greenyellow;
 }
 #projects .project-info h1 {
 	font-size: 4rem;
@@ -391,7 +387,7 @@ p {
 	margin-top: 10px;
 }
 #projects .project-info p {
-	color: white;
+	color: greenyellow;
 }
 #projects .project-img {
 	flex-basis: 50%;
@@ -418,11 +414,13 @@ p {
 /* End Projects section */
 
 /* About Section */
-#about .about {
+/* #about .about {
 	flex-direction: column-reverse;
 	text-align: center;
 	max-width: 100%;
-	background-color: whitesmoke;
+	background-image: url(../images/EXPENSE1.jpg);
+	background-size: cover;
+	background-position: center;
 	padding: 100px 20px;
 }
 #about .col-left {
@@ -467,13 +465,15 @@ p {
 	width: 98%;
 	border: 7px solid crimson;
 	z-index: -1;
-}
+} */
 /* End About Section */
 
 /* contact Section */
 #contact .contact {
 	flex-direction: column;
-	background-color: whitesmoke;
+	background-image: url(../images/EXPENSE1.jpg);
+	background-size: cover;
+	background-position: center;
 	width: 100%;
 }
 #contact .contact-items {
@@ -487,10 +487,9 @@ p {
 	text-align: center;
 	border-radius: 10px;
 	padding: 30px;
-	color: whitesmoke;
 	margin: 30px;
 	/* background-image: linear-gradient(45deg, #0e0e0f 20%,  #e89328 100%); */
-	background-color: #0e0e0f;
+	background-image: linear-gradient(to right, #e9ea2d, greenyellow, #1e8f36);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -581,7 +580,7 @@ p {
 }
 @keyframes text_reveal {
 	100% {
-		color: black;
+		color: white;
 	}
 }
 @keyframes text_reveal_name {
@@ -596,7 +595,7 @@ p {
 @media only screen and (min-width: 768px) {
 	.cta {
 		font-size: 2.5rem;
-		padding: 20px 60px;
+		padding: 20px 40px;
 	}
 	h1.section-title {
 		font-size: 6rem;

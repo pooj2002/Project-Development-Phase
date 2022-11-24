@@ -6,17 +6,16 @@
 	box-sizing: border-box;
 }
 html{
-	font-size: 10px;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Crimson Pro', serif;
+    font-size: 10px;
 }
 body{
-    font-family: 'Ubuntu', sans-serif;
     overflow: hidden;
 	color: white;
 	/* background-image: linear-gradient(-10deg, #e89328 1%, #0e0f10 20%); */
-	background-image: radial-gradient(farthest-corner at 50% 25% , rgb(9, 8, 8) 80%, rgba(255, 166, 0, 0.983));
+	/* background-image: radial-gradient(farthest-corner at 50% 25% , rgb(9, 8, 8) 80%, rgba(255, 166, 0, 0.983)); */
 	background-position: left;
-	/* background-color: #0c0c0b; */
+	background-image: url(../images/EXPENSE.jpg);
 }
 a{
  text-decoration:none;
@@ -24,19 +23,20 @@ a{
 .home-btn a{
 	position: absolute;
 	top: 8vh;
-	left: 20vh;
-	font-size: 2.4em;
-	border: 2px solid orange;
+	left: 10vh;
+	font-size: 2.6em;
+	border: 2px solid greenyellow;
 	padding: 10px 40px;
 	margin: 10px;
 	cursor: pointer;
-	color: #e89328;
+	color: #1e8f36;
+	background-color: black;
 }
 
 .home-btn a:hover{
 	font-weight: 900;
-	background-color: #ee9a3a;
-	color: #0c0c0b;
+	background-color: greenyellow;
+	color: #1e8f36;
 	transition: 0.5s all ease-in-out;
 }
 
@@ -52,9 +52,10 @@ a{
 	margin-bottom: 40px;
 }
 .sign-up{
-	border: 4px solid rgb(255, 166, 1);
+	border: 4px solid greenyellow;
 	padding: 70px 40px;
-	color: whitesmoke;
+	color: greenyellow;
+	background-color: black;
 	display:flex;
  	flex-direction:column;
  	align-items: center;
@@ -62,16 +63,17 @@ a{
 }
 .text-container{
     position: relative;
-    top:-100px; padding-bottom:-50px;
- width:50%;
- height:100%;
- display:flex;
- flex-direction:column;
- justify-content: center;
- align-items: center;
- margin-left:700px;
- margin-bottom:-10px;
- top:-40px
+    top:-100px;
+	padding-bottom:-50px;
+	width:50%;
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+	margin-left:700px;
+	margin-bottom:-10px;
+	top:-40px
  
 }
 
@@ -80,7 +82,7 @@ a{
  height:50px;
  box-shadow:2px 6px 18px rgba(66,57,238,0.3);
  display:flex;
- background-color: whitesmoke;
+ background-color: greenyellow;
  align-items:center;
  margin:10px;
 }
@@ -122,7 +124,7 @@ button{
  	outline:none;
  	border:none;
  	border-radius:10px;
- 	background-image: linear-gradient(to right, #0c0c0b, #ed8916, #ff8000);
+ 	background-image: linear-gradient(to right, #0c0c0b, #1e8f36, greenyellow);
  /* box-shadow:2px 6px 16px rgba(223, 134, 39, 0.898); */
 	color: #fff;
  	font-size: 1.7rem;

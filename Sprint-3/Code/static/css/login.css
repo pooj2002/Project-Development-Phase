@@ -11,12 +11,13 @@ a{
 }
 
 body{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Crimson Pro', serif;
     overflow: hidden;
 	color: white;
-	/* background-image: linear-gradient(10deg, #e89328 2%, #0e0f10 100%); */
-	background-color: #0c0c0b;
-	/* background-image: radial-gradient(farthest-corner at 50% 25% , rgb(9, 8, 8) 80%, rgba(255, 166, 0, 0.983)); */
+	/* background-image: linear-gradient(to right, black, greenyellow, #1e8f36); */
+	/* background-color: #0c0c0b; */
+	/* background-image: radial-gradient(farthest-corner at 50% 40% , rgb(9, 8, 8) 80%, #1e8f36); */
+	background-image: url(../images/EXPENSE.jpg);
 	background-size: 100%;
 }
 
@@ -31,19 +32,20 @@ body{
 .home-btn a{
 	position: absolute;
 	top: 8vh;
-	left: 20vh;
-	font-size: 1.6em;
-	border: 2px solid orange;
-	padding: 10px 40px;
-	margin: 10px;
+	left: 10vh;
+	font-size: 1.2em;
+	border: 2px solid greenyellow;
+	padding: 5px 25px;
+	background-color: black;
+	margin: 5px;
 	cursor: pointer;
-	color: #e89328;
+	color: greenyellow;
 }
 
 .home-btn a:hover{
 	font-weight: 900;
-	background-color: #ee9a3a;
-	color: #0c0c0b;
+	background-color: #1e8f36;
+	color: greenyellow;
 	transition: 0.5s all ease-in-out;
 }
 
@@ -58,19 +60,20 @@ body{
     padding: 0 2rem;
 }
 
-.img{
+/* .img{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-}
+} */
 
 .login-content{
-	border: 4px solid #e89328;
+	border: 4px solid #1e8f36;
 	padding: 50px 30px;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	text-align: center;
+	background-color: black;
 }
 
 .img img{
@@ -105,7 +108,7 @@ form{
 }
 
 .i{
-	color: whitesmoke;
+	color: #1e8f36;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -125,7 +128,7 @@ form{
 	left: 10px;
 	top: 50%;
 	transform: translateY(-50%);
-	color: #999;
+	color: greenyellow;
 	font-size: 18px;
 	transition: .3s;
 }
@@ -136,7 +139,7 @@ form{
 	bottom: -2px;
 	width: 0%;
 	height: 2px;
-	background-color: #e89328;
+	background-color: #1e8f36;
 	transition: .4s;
 }
 
@@ -158,7 +161,7 @@ form{
 }
 
 .input-div.focus > .i > i{
-	color: #e89328;
+	color: #1e8f36;
 }
 
 .input-div > div > input{
@@ -172,8 +175,7 @@ form{
 	background: none;
 	padding: 0.5rem 0.7rem;
 	font-size: 1.2rem;
-	color: whitesmoke;
-	font-family: 'poppins', sans-serif;
+	color: #1e8f36;
 }
 
 .input-div.pass{
@@ -189,7 +191,7 @@ form{
 	border-radius: 25px;
 	outline: none;
 	border: none;
-	background-image: linear-gradient(to right, #0c0c0b, #ee9a3a, #f7932f);
+	background-image: linear-gradient(to right, #0c0c0b, #1e8f36, greenyellow);
 	background-size: 200%;
 	font-size: 1.2rem;
 	color: #fff;

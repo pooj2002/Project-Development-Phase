@@ -13,8 +13,7 @@ app = Flask(__name__)
 
 app.secret_key = 'SECRET_KEY'
 
-
-
+#IBM Database connection
 conn = ibm_db.connect("DATABASE=bludb; HOSTNAME=b70af05b-76e4-4bca-a1f5-23dbb4c6a74e.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud; PORT=32716; SECURITY=SSL; SSLServerCertificate=DigiCertGlobalRootCA.crt; UID=fks81181;PWD=mdQZREsASRiq3Lb1",'','')
 pd_conn = ibm_db_dbi.Connection(conn)
 
