@@ -10,13 +10,13 @@ import pdfkit
 
 
 app = Flask(__name__)
+#app.config['SECRET_KEY'] = 'spooprathmahj142815'
 
 app.secret_key = 'SECRET_KEY'
-
 #added for bcrypt
 bcrypt = Bcrypt(app)
 
-#ibm database connection
+
 conn = ibm_db.connect("DATABASE=bludb; HOSTNAME=b70af05b-76e4-4bca-a1f5-23dbb4c6a74e.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud; PORT=32716; SECURITY=SSL; SSLServerCertificate=DigiCertGlobalRootCA.crt; UID=fks81181;PWD=mdQZREsASRiq3Lb1",'','')
 pd_conn = ibm_db_dbi.Connection(conn)
 
@@ -93,7 +93,14 @@ def login():
         ibm_db.bind_param(stmt, 1, username)
         
         ibm_db.execute(stmt)
-       
+        '''
+        sql = 'SELECT * from REGISTER WHERE USERNAME = ? AND PASSWORD = ?'
+        stmt = ibm_db.prepare(conn, sql)
+        ibm_db.bind_param(stmt, 1, username)
+        ibm_db.bind_param(stmt, 2, password)
+        ibm_db.execute(stmt)
+        '''
+
         account = ibm_db.fetch_assoc(stmt)
         
         print (account)
@@ -168,7 +175,6 @@ def AlterDate(date):
     time = temp[1].replace(':','.')
 
     return temp[0]+'-'+time
-
 
 
 #DISPLAY---graph 
