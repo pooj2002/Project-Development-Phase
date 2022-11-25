@@ -190,8 +190,9 @@ def display():
     sql = 'SELECT * FROM EXPENSES WHERE USER_ID = {} ORDER BY DATE DESC'.format(id)
     df = pd.read_sql(sql,pd_conn)
     expense = df.values.tolist()
-
+    print("expense : ")
     print(expense)
+    print(expense[0][3])
   
     return render_template('display.html' ,expense = expense)
                           
