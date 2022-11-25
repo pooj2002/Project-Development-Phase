@@ -6,7 +6,7 @@
 
     <div class="row">
     <div class="col-md-5">
-        <h3 class="mt-5">{{type}} Expense Breakdown</h3>
+        <h3 class="mt-5">{{type}} EXPENSE BREAKDOWN</h3>
         
 
 
@@ -37,16 +37,7 @@
 
     <div class="row">
         <div class="col-md-6">
-            <h3 class="mt-5">Expense Breakdown BY Category</h3>
-
-            <div class="card shadow mb-2 bg-white rounded-bottom">
-                <div class="card-body ">
-                <div class="row">
-                    <div class="col-md-6">Food</div>
-                    <div id="tfood" class="col-md-6">   {{ t_food}}   </div>
-                    </div>
-                </div>
-            </div>
+            <h3 class="mt-5">CATEGORIAL EXPENSE BREAKDOWN</h3>
 
             <div class="card shadow mb-2 bg-white rounded">
                 <div class="card-body">
@@ -57,22 +48,29 @@
                 </div>
             </div>
 
+            <div class="card shadow mb-2 bg-white rounded-bottom">
+                <div class="card-body ">
+                <div class="row">
+                    <div class="col-md-6">Food</div>
+                    <div id="tfood" class="col-md-6">   {{ t_food}}   </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card shadow mb-2 bg-white rounded">
+                <div class="card-body">
+                <div class="row">
+                    <div  class="col-md-6">Rent</div>
+                    <div id="trent" class="col-md-6"> {{  t_rent }}  </div>
+                </div>
+                </div>
+            </div>
 
             <div class="card shadow mb-2 bg-white rounded">
                 <div class="card-body">
                 <div class="row">
                     <div class="col-md-6">Business</div>
                     <div id="tbusiness" class="col-md-6"> {{t_business}}   </div>
-                </div>
-                </div>
-            </div>
-
-
-            <div class="card shadow mb-2 bg-white rounded">
-                <div class="card-body">
-                <div class="row">
-                    <div  class="col-md-6">Rent</div>
-                    <div id="trent" class="col-md-6"> {{  t_rent }}  </div>
                 </div>
                 </div>
             </div>
@@ -91,7 +89,7 @@
             <div class="card shadow mb-2 bg-white rounded">
                 <div class="card-body">
                 <div class="row">
-                    <div class="col-md-6">Other</div>
+                    <div class="col-md-6">Others</div>
                     <div id="tother" class="col-md-6"> {{ t_other}}</div>
                 </div>
                 </div>
@@ -108,29 +106,29 @@
 
         </div>
         <div class="col-md-6">
-            <canvas id="myChart" width="400" height="400"></canvas>
+            <canvas id="myChart" width="400" height="400" style="color: black; background-image: linear-gradient(to right, black, greenyellow, #1e8f36); border:1px lightgray"></canvas>
             <script>
-                let food = document.getElementById('tfood').innerHTML
                 let entertainment = document.getElementById('tentertainment').innerHTML
-                let business = document.getElementById('tbusiness').innerHTML
+                let food = document.getElementById('tfood').innerHTML
                 let rent = document.getElementById('trent').innerHTML
+                let business = document.getElementById('tbusiness').innerHTML
                 let emi = document.getElementById('temi').innerHTML
                 let other = document.getElementById('tother').innerHTML
             var ctx = document.getElementById('myChart').getContext('2d');
             var myChart = new Chart(ctx, {
                 type: 'doughnut',
                 data: {
-                    labels: ['Food', 'Entertainment', 'Business', 'Rent', 'EMI', 'Other'],
+                    labels: ['Entertainment', 'Food', 'Rent', 'Business', 'EMI', 'Other'],
                     datasets: [{
                         label: 'Expenses Chart',
                         data: [food, entertainment, business, rent, emi, other],
                         backgroundColor: [
-                        'rgb(255, 99, 132)',
-                        'rgb(265, 42, 42)',
-                        'rgb(255, 205, 86)',
-                        'rgb(201, 203, 207)',
-                        'rgb(54, 162, 235)',
-                        'rgb(215, 159, 64)'
+                        'rgb(245, 99, 112)',
+                        'rgb(215, 42, 62)',
+                        'rgb(155, 85, 46)',
+                        'rgb(101, 253, 207)',
+                        'rgb(54, 12, 245)',
+                        'rgb(125, 129, 83)'
                         ],
                     
                     }]

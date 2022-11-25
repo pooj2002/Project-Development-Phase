@@ -3,9 +3,9 @@
 {% block body %} 
 
 <div class="container-add">
-    <div class="row">
+<h1 class="addExpheading">ENTER <br> YOUR <br> EXPENSES <br> HERE!</h1>   
+    <div class="row" style="transform: translateX(20%);">
         <div class="col-md-6 expense-row">
-            <h3>Add Expense</h3>
             <form name = "add" action="/addexpense" method="POST" onsubmit="required()">
                 
                 <div class="form-group">
@@ -23,38 +23,31 @@
                     <label for=""></label> 
                     <select class="form-control" name="paymode" id="paymode">
                         <option  selected hidden>Pay-Mode</option>
-                        <option name="cash" value="cash">cash</option>
-                        <option name="debitcard" value="debitcard">debitcard</option>
-                        <option name="creditcard" value="creditcard">creditcard</option>
-                        <option name="epayment" value="epayment">epayment</option>
-                        <option name="onlinebanking" value="onlinebanking">onlinebanking</option>
+                        <option name="cash" value="cash">Cash</option>
+                        <option name="onlinebanking" value="onlinebanking">Online Banking</option>
+                        <option name="creditcard" value="creditcard">Credit card</option>
+                        <option name="debitcard" value="debitcard">Debit card</option>
+                        <option name="epayment" value="epayment">Epayment</option>
                     
                     </select>
                 
-               
-                
-
-                 <div class="form-group">
+                <div class="form-group">
                     <label for=""></label>
                     <select class="form-control" name="category" id="category">
 
                          <option selected hidden>Category</option>
-                        <option   name = "food" value="food">food</option>
                         <option name = "entertainment" value="entertainment">Entertainment</option>
-                        <option name = "business" value="business">Business</option>
+                        <option   name = "food" value="food">Food</option>
                         <option name ="rent" value="rent">Rent</option>
+                        <option name = "business" value="business">Business</option>
                         <option name = "EMI" value="EMI">EMI</option>
-                        <option name = "other" value="other">other</option>
+                        <option name = "other" value="other">Other</option>
             
                     </select>
-                </div>
-
-               
-                
-                <input class="btn btn-dark" type="submit" value="Add" id="">
-        
+                    <br>
+                    <input class="btn" type="submit" value="Add Expense">
+                </div>            
             </form>
-              
         </div>
     </div>
     

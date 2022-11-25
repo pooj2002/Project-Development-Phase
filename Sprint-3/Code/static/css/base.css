@@ -1,54 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro");
+body
+{
+    font-family: 'Crimson Pro', serif;
+}
+
+.addExpheading
+{
+    transform: translate(25%,10%);
+    font-size : 60px;
+}
+
+.btn
+{
+    transform: translateX(85%);
+    height: 100%;
+    background-color: greenyellow;
+    color: darkgreen;
+}
 
 .navbar-custom{
-    background-color: whitesmoke;
+    background-image: linear-gradient(to right, #e9ea2d, greenyellow, #1e8f36);
     min-height: 8vh;
     font-size: 1.2rem;
     font-weight: 600;
-    box-shadow: 0px 0px 18px 0 #e7e4e4b9;
+    box-shadow: 0px 0px 18px 0 green;
 }
-
-
 
 .navbar-custom .li-cust{
     padding: 0px 20px;
 }
 .navbar-custom .li-cust:hover{
     background-color: #000;
-    color: #e89328;
+    color: greenyellow;
 }
 
 .navbar-custom .li-cust .custom-a{
-    color: #000;
+    color: green;
     text-transform: uppercase;
 }
 
 .navbar-custom .li-cust .custom-a:hover{
     background-color: #000;
-    color: whitesmoke;
+    color: darkgreen;
 }
 
 /* add.html */
 
 body{
-    background-color: #000;
+    background-image: url(../images/BLACK_BG.jpg);
+    background-position: left;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 .container-add{
     width: 100vw;
     display: flex;
-    color: whitesmoke;
+    color: greenyellow;
     align-items: center;
     justify-content: center;
 }
 
 .expense-row{
-    border: 2px solid whitesmoke;
-    margin-top: 10vh;
-    padding: 20px 40px;
+    background-image: linear-gradient(-10deg, #1e8f36 1%, #0e0f10 20%); 
+    border: 2px solid greenyellow;
+    margin-top: 5vh;
+    padding: 10px 20px;
     width: 120vh;
 }
 
 .disp-wrap, .report-wrap h3{
-    color: whitesmoke;
+    color: greenyellow;
 }
 .report-wrap h3{
     margin-bottom: 20px;
@@ -64,21 +85,21 @@ body{
 
 .last-section a{
     text-decoration: none;
-    color: whitesmoke;
+    color: greenyellow;
     margin: 0 20px;
     font-size: 1.3rem;
     padding: 20px 40px;
-    border: 2px solid whitesmoke;
+    border: 2px solid greenyellow;
 }
 
 .last-section a:hover{
-    background-color: whitesmoke;
-    color: #000;
+    background-color: greenyellow;
+    color: darkgreen;
     transition: 0.5s all ease-in-out;
 }
 
 .container-limit{
-    color: whitesmoke;
+    color: greenyellow;
     padding: 40px;
 }
 
@@ -90,7 +111,7 @@ body{
 }
 
 .message span{
-    color: crimson;
+    color: lightgreen;
 }
 
 .form-limit{
@@ -112,6 +133,6 @@ body{
 }
 
 .canvas-limit{
-    margin-left: 40vh;
-    /* border: 2px solid whitesmoke; */
+    background-color: #0e0f10;
+    border: 2px solid greenyellow;
 }
